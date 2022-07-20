@@ -105,6 +105,19 @@ body {
     text-align: center;
 }
 
+/* View All button style for tab only */
+.for-tab {
+    text-decoration: none;
+    display: none;
+}
+
+.tab-btn {
+    height: 40px;
+    width: 70px;
+    background-color: red;
+    color: white;
+}
+
 /* style for footer */
 .footer {
     background-color: bisque;
@@ -150,4 +163,114 @@ body {
     text-decoration: none;
     color: black;
     margin-bottom: 10px;
+}
+
+/* Responsiveness for mobile */
+@media screen and (max-width:576px) {
+    .top-banner {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .top-banner p {
+        margin-bottom: 10px;
+    }
+
+    .button {
+        padding: 5px;
+    }
+
+    .middle-part {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-menu {
+        flex-direction: column;
+        margin-top: 5px;
+        background-color: white;
+        border: none;
+    }
+
+    .side-button {
+        border: 1px solid grey;
+        background-color: red;
+        color: white;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .for-tab {
+        display: none;
+    }
+
+    .footer {
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .icon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 700px) {
+    .top-banner {
+        flex-direction: raw;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .middle-part {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-menu {
+        width: 100%;
+        height: 80px;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 2px;
+        margin-bottom: 10px;
+        background-color: white;
+        border: none;
+    }
+
+    .side-button {
+        border: 1px solid grey;
+        padding: 20px 30px;
+        margin-top: 10px;
+        background-color: white;
+        color: black;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .for-tab {
+        margin-top: 20px;
+        align-items: center;
+        display: contents;
+
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
 }

@@ -1,0 +1,78 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.half-width p {
+    margin-bottom: 60px;
+}
+
+/* Top banner Style */
+.top-banner {
+    background-color: black;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.half-width {
+    width: 50%;
+    padding-left: 3%;
+    color: white;
+}
+
+/* Style for Button */
+.button {
+    text-decoration: none;
+    color: white;
+    margin-top: 50px;
+    background-color: red;
+    padding: 10px 40px;
+    border-radius: 10px;
+
+}
+
+/* side menu & blogspart */
+.middle-part {
+    display: flex;
+}
+
+/* style for side menu */
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 20px;
+
+}
+
+/* Style for side-menu */
+.side-button {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 10px;
+
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 25px
+}
+
+/* Style for blog */
+.blog {
+    border: 1px solid burlywood;
+    height: 300px;
+    width: 310px;
+    border-radius: 10px;
+}

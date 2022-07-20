@@ -93,6 +93,18 @@ body {
     border-radius: 10px;
 }
 
+/* blog style for match page */
+.blog-match {
+    border: 1px solid burlywood;
+    height: 200px;
+    width: 247.5px;
+    border-radius: 10px;
+}
+
+.blog-match h3 {
+    text-align: center;
+}
+
 /* style for footer */
 .footer {
     background-color: bisque;
